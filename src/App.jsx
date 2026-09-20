@@ -5,7 +5,7 @@ import 'react-toastify/dist/ReactToastify.css';
 
 import Navbar from './components/Navbar';
 import Login from './components/Login'; 
-import WorkOrderList from './components/workOrderList';
+import WorkOrderList from './components/WorkOrderList';
 import CreateWorkOrder from './components/CreateWorkOrder';
 import TrackOrder from './components/TrackOrder';
 import ProtectedRoute from './components/ProtectedRoute';
