@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const API_URL = 'http://localhost:5500/api/auth';
+const API_URL = 'https://keystone-backend-production-11cc.up.railway.app/api/auth';
 
 export const login = async (email, password) => {
   const response = await axios.post(`${API_URL}/login`, {

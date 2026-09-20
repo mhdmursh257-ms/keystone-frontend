@@ -12,7 +12,7 @@ const TrackOrder = () => {
     setOrderDetails(null);
 
     try {
-      const response = await axios.get(`http://localhost:5500/api/work-orders/track/${token}`);
+      const response = await axios.get(`https://keystone-backend-production-11cc.up.railway.app/api/work-orders/track/${token}`);
       setOrderDetails(response.data);
     } catch (err) {
       setError('Invalid Tracking Token or Work Order not found.');

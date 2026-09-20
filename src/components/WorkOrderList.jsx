@@ -120,7 +120,7 @@ const WorkOrderList = () => {
   const handleDownloadInvoice = async (id) => {
     try {
       const token = localStorage.getItem('token');
-      const response = await axios.get(`http://localhost:5500/api/work-orders/${id}/invoice`, {
+      const response = await axios.get(`https://keystone-backend-production-11cc.up.railway.app/api/work-orders/${id}/invoice`, {
         headers: { Authorization: `Bearer ${token}` },
         responseType: 'blob'
       });
